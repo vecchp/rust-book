@@ -1,18 +1,12 @@
-use std::collections::BinaryHeap;
-use price;
+extern crate time;
 
-
-
-
-/*struct Book {
-    orders: BinaryHeap<PriceUpdate>
-}*/
-
-
+mod book;
+use book::{Book};
 
 fn main() {
-   //let t = time::now_utc();
-   /*let bid_price = Bid(PriceUpdate{
+    let book = Book::new();
+   /*let t = time::now_utc(;);
+   let bid_price = Bid(PriceUpdate{
        time: time::now_utc(),
        action: Message::New,
        price: 1.0,
@@ -29,7 +23,8 @@ fn main() {
        order_count: 100,
        level: 1
     });
-*/
+
    
-  // println!("{:?} {:?}", bid_price, ask_price);
+     println!("{:?} {:?}", bid_price, ask_price);
+    */
 }
